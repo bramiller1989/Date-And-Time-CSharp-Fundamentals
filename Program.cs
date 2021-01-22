@@ -14,7 +14,7 @@ namespace DateAndTime
             Console.WriteLine("Minute: " + now.Minute);
 
             var tomorrow = now.AddDays(1);
-            var yesterday = now.Add(-1);
+            var yesterday = now.AddDays(-1);
 
 
         }
