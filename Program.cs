@@ -22,6 +22,7 @@ namespace DateAndTime
             Console.WriteLine(now.ToShortTimeString());
             Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm"));
 
+            // Creating
             var timeSpan = new TimeSpan(1, 2, 3);
             Console.WriteLine("timeSpan: " + timeSpan);
 
@@ -35,6 +36,23 @@ namespace DateAndTime
             var end = DateTime.Now.AddMinutes(2);
             var duration = end - start;
             Console.WriteLine("Duration: " + duration);
+
+            // Properties
+            Console.WriteLine("Minutes: " + timeSpan.Minutes);
+            Console.WriteLine("Total Minutes: " + timeSpan.TotalMinutes);
+
+            // Add
+            Console.WriteLine("Add Example: " + timeSpan.Add(TimeSpan.FromMinutes(8)));
+
+            // Subtract
+            Console.WriteLine("Subtract Example: " + timeSpan.Add(TimeSpan.FromMinutes(-2)));
+
+            // ToString
+            Console.WriteLine("ToString: " + timeSpan.ToString());
+
+            // Parse
+            Console.WriteLine("Parse: " + TimeSpan.Parse("01:02:03"));
+
         }
     }
 }
