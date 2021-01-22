@@ -13,6 +13,10 @@ namespace DateAndTime
             Console.WriteLine("Hour: " + now.Hour);
             Console.WriteLine("Minute: " + now.Minute);
 
+            var tomorrow = now.AddDays(1);
+            var yesterday = now.Add(-1);
+
+
         }
     }
 }
